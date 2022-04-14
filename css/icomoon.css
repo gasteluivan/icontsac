@@ -1,0 +1,253 @@
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoonda59.eot?vdw2jk');
+  src:  url('../fonts/icomoonda59.eot?vdw2jk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoonda59.ttf?vdw2jk') format('truetype'),
+    url('../fonts/icomoonda59.woff?vdw2jk') format('woff'),
+    url('../fonts/icomoonda59.svg?vdw2jk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+.icon-speech-bubble .path1:before {
+  content: "\e938";
+  color: rgb(51, 152, 253);
+}
+.icon-speech-bubble .path2:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(32, 50, 96);
+}
+.icon-speech-bubble .path3:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(32, 50, 96);
+}
+.icon-speech-bubble .path4:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(32, 50, 96);
+}
+.icon-email .path1:before {
+  content: "\e93c";
+  color: rgb(51, 152, 253);
+}
+.icon-email .path2:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-email .path3:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(32, 50, 96);
+}
+.icon-email .path4:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(32, 50, 96);
+}
+.icon-question:before {
+  content: "\e900";
+}
+.icon-chat .path1:before {
+  content: "\e901";
+  color: rgb(229, 106, 119);
+}
+.icon-chat .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-chat .path3:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-chat .path4:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-mail .path1:before {
+  content: "\e905";
+  color: rgb(129, 189, 164);
+}
+.icon-mail .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-mail .path3:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-mail .path4:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-null:before {
+  content: "\e909";
+}
+.icon-search:before {
+  content: "\e90a";
+}
+.icon-cart:before {
+  content: "\e90b";
+}
+.icon-power:before {
+  content: "\e90c";
+}
+.icon-solar:before {
+  content: "\e90d";
+}
+.icon-power-1:before {
+  content: "\e90e";
+}
+.icon-back:before {
+  content: "\e90f";
+}
+.icon-solar-energy:before {
+  content: "\e910";
+}
+.icon-farm:before {
+  content: "\e911";
+}
+.icon-farming-and-gardening:before {
+  content: "\e912";
+}
+.icon-drill:before {
+  content: "\e913";
+}
+.icon-gear:before {
+  content: "\e914";
+}
+.icon-cctv:before {
+  content: "\e915";
+}
+.icon-chat-1:before {
+  content: "\e916";
+}
+.icon-roof:before {
+  content: "\e917";
+}
+.icon-triangular:before {
+  content: "\e918";
+}
+.icon-null-1:before {
+  content: "\e919";
+}
+.icon-ecology:before {
+  content: "\e91a";
+}
+.icon-solar-panel:before {
+  content: "\e91b";
+}
+.icon-money:before {
+  content: "\e91c";
+}
+.icon-plus:before {
+  content: "\e91d";
+}
+.icon-user:before {
+  content: "\e91e";
+}
+.icon-point:before {
+  content: "\e91f";
+}
+.icon-quote:before {
+  content: "\e920";
+}
+.icon-download:before {
+  content: "\e921";
+}
+.icon-call:before {
+  content: "\e922";
+}
+.icon-null-2:before {
+  content: "\e923";
+}
+.icon-null-3:before {
+  content: "\e924";
+}
+.icon-career:before {
+  content: "\e925";
+}
+.icon-null-4:before {
+  content: "\e926";
+}
+.icon-null-5:before {
+  content: "\e927";
+}
+.icon-save:before {
+  content: "\e928";
+}
+.icon-label:before {
+  content: "\e929";
+}
+.icon-money-1:before {
+  content: "\e92a";
+}
+.icon-smile:before {
+  content: "\e92b";
+}
+.icon-question-1:before {
+  content: "\e92c";
+}
+.icon-plug:before {
+  content: "\e92d";
+}
+.icon-ecology-and-environment:before {
+  content: "\e92e";
+}
+.icon-wrench:before {
+  content: "\e92f";
+}
+.icon-question-2:before {
+  content: "\e930";
+}
+.icon-pdf:before {
+  content: "\e931";
+}
+.icon-magnifying-glass:before {
+  content: "\e932";
+}
+.icon-link:before {
+  content: "\e933" !important;
+}
+.icon-mail-1:before {
+  content: "\e934";
+}
+.icon-energy:before {
+  content: "\e935";
+}
+.icon-reload:before {
+  content: "\e936";
+}
+.icon-heart:before {
+  content: "\e937" !important;
+}
