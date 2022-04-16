@@ -520,6 +520,41 @@ function testimonialCarousel () {
                     items:1
                 },
                 800:{
+                    items:2
+                },
+                1024:{
+                    items:2
+                },
+                1100:{
+                    items:3
+                },
+                1200:{
+                    items:3
+                }
+            }
+        });    		
+    }
+    if ($('.testimonial-carousel_2').length) {
+        $('.testimonial-carousel_2').owlCarousel({
+            dots: true,
+            loop: true,
+            margin: 30,
+            nav: false,
+            navText: [
+                '<i class="fa fa-angle-left"></i>',
+                '<i class="fa fa-angle-right"></i>'
+            ],
+            autoplayHoverPause: false,
+            autoplay: 15000,
+            smartSpeed: 700,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                800:{
                     items:1
                 },
                 1024:{

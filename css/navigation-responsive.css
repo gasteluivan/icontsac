@@ -174,7 +174,7 @@
         right: 15px;
         /*margin-top: 8px;*/
         margin-right: 0px;
-        display: block;
+        /* display: block; */
         cursor: pointer;
     }
 
@@ -290,6 +290,7 @@
         margin: 0;
         padding: 0;
         border: none;
+        overflow: hidden;       
     }
 
     .site-header.header-one .header-navigation ul.navigation-box>li>a:after {
