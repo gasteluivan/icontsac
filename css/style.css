@@ -383,6 +383,18 @@ li{
     }
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("../images/parallax-background/fact-counter-bg.jpg");
+  
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .home-page-five-body {
     background-color: #FBFBFB;
@@ -796,7 +808,7 @@ hr.style-one {
 
 .sec-title-five h2 span.text-line {
     background-color: transparent;
-    background-image: url(../images/home-pages/home-5-sec-title-shape.png);
+    /* background-image: url(../images/home-pages/home-5-sec-title-shape.png); */
     background-repeat: no-repeat;
     background-position: center left;
     position: relative;
@@ -7864,18 +7876,21 @@ select:focus {
 }
 
 .footer-bottom-home-two {
-    background: #fff;
+    /* background: #fff; */
+    background: #01a8a1;
     padding: 22px 0;
 }
 
 .footer-bottom-home-two p {
     margin: 0;
-    color: #83888D;
+    /* color: #83888D; */
+    color: #FFFFFF;
     font-size: 16px;
 }
 
 .footer-bottom-home-two p a {
-    color: #01B9E6;
+    /* color: #01B9E6; */
+    color: #ffe300;
 }
 
 .footer-bottom-home-two .footer-menu {
@@ -7894,13 +7909,14 @@ select:focus {
 }
 
 .footer-bottom-home-two .footer-menu li a {
-    color: #83888D;
+    /* color: #83888D; */
+    color: #FFFFFF;
     font-size: 16px;
     transition: all .4s ease;
 }
 
 .footer-bottom-home-two .footer-menu li a:hover {
-    color: #01B9E6;
+    color: #ffe300;
 }
 
 .site-footer.footer-three,

@@ -3,12 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contact || Solartech || Responsive HTML 5 Template</title>
+    <title>Contacto || ICONTSAC</title>
 
     <!-- responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="ICONTSAC : Tenemos + de 9 años de experiencia trabajando para grandes y pequeñas empresas reconocidas brindándole garantía y seguridad para las instalaciones y trabajos, nuestra visión es realmente clara, y siempre está destinada a que con sus paneles solares más personas obtengan energía renovable en sus hogares. Para que a la vez no solo se ayude al ambiente sino sea también una ayuda económica al mismo tiempo.">
+    <meta name="keywords" content="fotovoltaica, luz, solar, paneles, servicios, mantenimiento, soporte, integracion, reparacion, muebles, empresas, grandes, pequeñas, instalaciones, energia">
 
     <!-- master stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -22,11 +25,26 @@
     <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
 
+    <meta property="og:url"                content="https://gasteluivan.github.io/icontsac" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="ICONTSAC || INTEGRANDO SOLUCIONES" />
+    <meta property="og:description"        content="Empresa dedicada a las instalaciones y construcciones tecnológicas, con más de 9 años de experiencia." />
+    <meta property="og:image"              content="https://gasteluivan.github.io/icontsac/cards/facebook-publish.jpg" />
+    <meta property="og:image:width"        content="1200" />
+
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSWJ8W89HB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KSWJ8W89HB');
+    </script>
 
 </head>
 
@@ -110,6 +128,7 @@
                                     class="fa fa-facebook-f"></i></a>
                             <a target="_blank" href="https://www.instagram.com/icontsacmolinaherrera/?hl=es"><i
                                     class="fa fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCr3zKiFz_uvZQCLh95tYcrw"><i class="fa fa-youtube"></i></a>
                             <!-- <a href="#"><i class="fa fa-skype"></i></a> -->
                         </div><!-- /.social -->
                     </div>
@@ -126,15 +145,15 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="inner-content clearfix">
-                            <div class="title text-center">
-                                <h1>Ponte en contacto con nosotros</h1>
+                            <div class="title float-left">
+                                <h1>Contacto</h1>
                             </div>
-                            <!-- <div class="breadcrumb-menu float-right">
-                        <ul class="clearfix">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active">Contact</li>
-                        </ul>    
-                    </div> -->
+                            <div class="breadcrumb-menu float-right">
+                                <ul class="clearfix">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">Contacto</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,8 +187,22 @@
                         <div class="contact-form">
                             <div class="inner">
                                 <form id="contact-form" name="contact_form" class="default-form"
-                                    action="http://st.ourhtmldemo.com/new/solartech-demo/inc/sendmail.php"
+                                    action=""
                                     method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-box">
+                                                <input type="text" name="form_name" value=""
+                                                    placeholder="Tus nombres y apellidos" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-box">
+                                                <input type="email" name="form_email" value=""
+                                                    placeholder="email@dominio.com" required="">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <!-- <div class="col-md-6">
                                                     <div class="input-box">
@@ -186,29 +219,16 @@
                                                 </div> -->
                                         <div class="col-md-6">
                                             <div class="input-box">
-                                                <input type="text" name="asunto" value="" placeholder="Asunto">
+                                                <input type="text" name="asunto" value="" placeholder="Asunto" required="">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="input-box">
-                                                <input type="text" name="form_phone" value="" placeholder="N° Celular">
+                                                <input type="text" name="form_phone" value="" placeholder="N° Celular" required="">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="input-box">
-                                                <input type="text" name="form_name" value=""
-                                                    placeholder="Tus nombres y apellidos" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="input-box">
-                                                <input type="email" name="form_email" value=""
-                                                    placeholder="tunombre@email.com" required="">
-                                            </div>
-                                        </div>
-                                    </div>
+
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="input-box">
@@ -241,7 +261,7 @@
 
         <!--Start Contact Details Area-->
         <section class="contact-details-area pb-2">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row pb-5">
                     <div class="col-xl-12">
                         <div class="emergency-call wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -269,147 +289,6 @@
         </section>
         <!--End Contact Details Area-->
 
-
-        <!--Start Branches section-->
-        <section class="branches-section pt-0">
-            <div class="container inner-content">
-                <div class="row">
-                    <div class="col-xl-12 pb-4">
-                        <div class="our-all-branches wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <h6>CLIENTES SATISFECHOS</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="branches-carousel owl-carousel owl-theme">
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>Aduana Control Tomadorah</h3>
-                                </div>
-                                <ul>
-                                    <li>Tacna</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>ODEP<br>&nbsp;</h3>
-                                </div>
-                                <ul>
-                                    <li>Lima</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>ZOFRATACNA<br>&nbsp;</h3>
-                                </div>
-                                <ul>
-                                    <li>Tacna</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>E&V Operaciones Comerciales CRL</h3>
-                                </div>
-                                <ul>
-                                    <li>Tacna</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>SUNASS<br>&nbsp;</h3>
-                                </div>
-                                <ul>
-                                    <li>Tacna</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>ACNUR / UNHCR Tacna</h3>
-                                </div>
-                                <ul>
-                                    <li>Tacna</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>Ministerio de Vivienda</h3>
-                                </div>
-                                <ul>
-                                    <li>Lima</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>Nasukatec Operaciones</h3>
-                                </div>
-                                <ul>
-                                    <li>Tacna</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>Comercial CRS<br>&nbsp;</h3>
-                                </div>
-                                <ul>
-                                    <li>Trujillo</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>Marce Hotel<br>&nbsp;</h3>
-                                </div>
-                                <ul>
-                                    <li>Tacna</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                            <div class="single-branches-box text-center">
-                                <div class="title-box">
-                                    <h3>W&W Ingenieros<br>&nbsp;</h3>
-                                </div>
-                                <ul>
-                                    <li>Lima</li>
-                                </ul>
-                                <div class="text">
-                                    <p><span class="icon-point"></span>Perú</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Branches section-->
 
         <!--Start Google Map Area-->
         <section class="google-map-area">
@@ -459,6 +338,8 @@
     <script src="js/gmaps.js"></script>
     <script src="js/map-helper.js"></script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
     <script src="assets/jquery-ui-1.11.4/jquery-ui.js"></script>
     <script src="assets/language-switcher/jquery.polyglot.language.switcher.js"></script>
     <script src="assets/timepicker/timePicker.js"></script>
