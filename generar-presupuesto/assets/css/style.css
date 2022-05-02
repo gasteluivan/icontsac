@@ -361,7 +361,8 @@ html {
   font-weight: 400;
   line-height: 1.5em;
   overflow-x: hidden;
-  background-color: #f5f7ff;
+  /* background-color: #f5f7ff; */
+  background-color: #004849;;
 }
 
 h1,
@@ -803,7 +804,9 @@ kbd {
 
 .cs-accent_color,
 .cs-accent_color_hover:hover {
-  color: #2ad19d;
+  color: #008080;
+  /* color: #028a85; */
+  /* color: #2ad19d; */
 }
 
 .cs-accent_bg,
@@ -973,6 +976,7 @@ kbd {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
+  z-index: 2;
 }
 
 .cs-invoice_btns .cs-invoice_btn:first-child {
@@ -1368,4 +1372,26 @@ kbd {
   top: 0px;
   left: 0px;
   border: none;
+}
+
+.lineBottom{
+  border-top: 0px solid #eaeaea !important;
+  padding: 0px 0px 10px 30px !important;
+  border-bottom: 2px solid #d5d5d5 !important;
+}
+.f-12 {
+  font-size: 12px;
+}
+
+.print_ps{
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 0.09;
+}
+.ext_bg{
+  overflow: hidden;
+    position: relative;
 }
