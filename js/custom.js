@@ -849,13 +849,16 @@ if ($("#contact-form").length) {
       var form_btn_old_msg = form_btn.html();
       form_btn.html(form_btn.prop("disabled", true).data("loading-text"));
 
+      
+
       Email.send({
-        Host: "smtp.gmail.com",
-        Username: "icontsac.web@gmail.com",
-        Password: "xpmmsdteinelldtv",
+        SecureToken : "42e75685-2bac-4f53-9ee1-b2c8c15d6247",
+        // Host: "smtp.gmail.com",
+        // Username: "icontsac.web@gmail.com",
+        // Password: "ecuvbssglikubezx",
         To: ["amolina@icontsac.com", "icontsac.web@gmail.com", "angelmolinaherrera@gmail.com"],
-        // To: "icontsac.web@gmail.com",
-        From: "info@icontsac.com",
+        // To: ["gastelu.n.ivan@gmail.com", "icontsac.web@gmail.com"],
+        From: "gasteluivan007@gmail.com",
         Subject: "Formulario web ICONTSAC - " + form.asunto.value ,
         Body:
           "Este correo fué enviado desde la pagina contactos: <br> Nombre del cliente: " +
