@@ -840,6 +840,7 @@ if ($(".wow").length) {
 if ($("#contact-form").length) {
   $("#contact-form").validate({
     submitHandler: function (form) {
+      // $("#contact-form").on('submit',function(){
       var form_btn = $(form).find('button[type="submit"]');
       var form_result_div = "#form-result";
       $(form_result_div).remove();
@@ -849,42 +850,39 @@ if ($("#contact-form").length) {
       var form_btn_old_msg = form_btn.html();
       form_btn.html(form_btn.prop("disabled", true).data("loading-text"));
 
+      // var form = $(this);
       
+      $.ajax({
+        url: "./php/send_mail.php",
+        method: "post",
+        data: {
+          form_name: form.form_name.value,
+          form_email: form.form_email.value,
+          asunto: form.asunto.value,
+          form_phone: form.form_phone.value,
+          form_message: form.form_message.value,
+        },
+        success: function (result) {
+          console.log(result);
 
-      Email.send({
-        SecureToken : "42e75685-2bac-4f53-9ee1-b2c8c15d6247",
-        // Host: "smtp.gmail.com",
-        // Username: "icontsac.web@gmail.com",
-        // Password: "ecuvbssglikubezx",
-        To: ["amolina@icontsac.com", "icontsac.web@gmail.com", "angelmolinaherrera@gmail.com"],
-        // To: ["gastelu.n.ivan@gmail.com", "icontsac.web@gmail.com"],
-        From: "gasteluivan007@gmail.com",
-        Subject: "Formulario web ICONTSAC - " + form.asunto.value ,
-        Body:
-          "Este correo fué enviado desde la pagina contactos: <br> Nombre del cliente: " +
-          form.form_name.value +
-          "<br> Teléfono: " +
-          form.form_phone.value +
-          "<br> Correo electrónico: " +
-          form.form_email.value +
-          "<br> Téma: " +
-          form.asunto.value +
-          "<br> Mensáje: " +
-          form.form_message.value,
-      })
-        .then((message) => {
-          console.log(message);
-          if (message === "OK") {
-            $("#form-result").removeClass("alert-danger alert-success").addClass("alert-success");
+          if (result === "success") {
             $("#form-result")
-              .html("Recepcionamos tu mensaje, pronto nos pondremos en contacto contigo.")
+              .removeClass("alert-danger alert-success")
+              .addClass("alert-success");
+            $("#form-result")
+              .html(
+                "Recepcionamos tu mensaje, pronto nos pondremos en contacto contigo."
+              )
               .fadeIn("slow");
             form_btn.prop("disabled", false).html(form_btn_old_msg);
             setTimeout(function () {
               $("#form-result").fadeOut("slow");
             }, 6000);
+            document.querySelector("#contact-form").reset();
           } else {
-            $("#form-result").removeClass("alert-danger alert-success").addClass("alert-danger");
+            $("#form-result")
+              .removeClass("alert-danger alert-success")
+              .addClass("alert-danger");
             $("#form-result")
               .html("Algo salio mal intentalo nuevamente!")
               .fadeIn("slow");
@@ -893,9 +891,57 @@ if ($("#contact-form").length) {
               $("#form-result").fadeOut("slow");
             }, 6000);
           }
-          var frm = document.querySelector("#contact-form").reset();
-        })
-        .catch((err) => console.log(err));
+        },
+      });
+
+      // Prevents default submission of the form after clicking on the submit button.
+      return false;
+
+      // Email.send({
+      //   SecureToken : "42e75685-2bac-4f53-9ee1-b2c8c15d6247",
+      //   // Host: "smtp.gmail.com",
+      //   // Username: "icontsac.web@gmail.com",
+      //   // Password: "ecuvbssglikubezx",
+      //   To: ["amolina@icontsac.com", "icontsac.web@gmail.com", "angelmolinaherrera@gmail.com"],
+      //   // To: ["gastelu.n.ivan@gmail.com", "icontsac.web@gmail.com"],
+      //   From: "gasteluivan007@gmail.com",
+      //   Subject: "Formulario web ICONTSAC - " + form.asunto.value ,
+      //   Body:
+      //     "Este correo fué enviado desde la pagina contactos: <br> Nombre del cliente: " +
+      //     form.form_name.value +
+      //     "<br> Teléfono: " +
+      //     form.form_phone.value +
+      //     "<br> Correo electrónico: " +
+      //     form.form_email.value +
+      //     "<br> Téma: " +
+      //     form.asunto.value +
+      //     "<br> Mensáje: " +
+      //     form.form_message.value,
+      // })
+      //   .then((message) => {
+      //     console.log(message);
+      //     if (message === "OK") {
+      //       $("#form-result").removeClass("alert-danger alert-success").addClass("alert-success");
+      //       $("#form-result")
+      //         .html("Recepcionamos tu mensaje, pronto nos pondremos en contacto contigo.")
+      //         .fadeIn("slow");
+      //       form_btn.prop("disabled", false).html(form_btn_old_msg);
+      //       setTimeout(function () {
+      //         $("#form-result").fadeOut("slow");
+      //       }, 6000);
+      //     } else {
+      //       $("#form-result").removeClass("alert-danger alert-success").addClass("alert-danger");
+      //       $("#form-result")
+      //         .html("Algo salio mal intentalo nuevamente!")
+      //         .fadeIn("slow");
+      //       form_btn.prop("disabled", false).html(form_btn_old_msg);
+      //       setTimeout(function () {
+      //         $("#form-result").fadeOut("slow");
+      //       }, 6000);
+      //     }
+      //     var frm = document.querySelector("#contact-form").reset();
+      //   })
+      //   .catch((err) => console.log(err));
     },
   });
 }
