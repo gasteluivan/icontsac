@@ -45,7 +45,7 @@ try {
 
     //Recipients
     $mail->setFrom('no-reply@icontsac.com', 'ICONTSAC - WEB');
-    $mail->addAddress('igastelu@factoriamedia.com');
+    // $mail->addAddress('igastelu@factoriamedia.com');
     $mail->addAddress('amolina@icontsac.com');     
     $mail->addAddress('icontsac.web@gmail.com');     
     $mail->addAddress('angelmolinaherrera@gmail.com');     
